@@ -77,7 +77,23 @@ fn main() {
     // Formatting and Concateneating strings
     let my_name = "Chandler Bartholomew".to_string();
     println!("The string contains my name {}", my_name);
+
+    let empty_string = String::new();
+    println!("length of empty_string is {}", empty_string.len());
+
+    let s_1 = "Chandler".to_string();
+    let s_2 = "Bartholomew".to_string();
+
+    let s_3 = format!("My first name is {} and my last name is {}", s_1, s_2);
+    println!("{}",s_3);
+
+    let string_1 = String::from("Chandler");
+    let string_2 = String::from("Bartholomew");
+
+    let string_3 = format!("{}{}", string_1, string_2);
+    println!("The concatenated string is {}", string_3);
     
+
 
 }
 
